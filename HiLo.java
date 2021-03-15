@@ -15,7 +15,7 @@ public class HiLo {
 		// Generate a random int between 1 and 100
 
 		random = (int) (Math.random() * 100) + 1;
-
+		System.out.println(random);
 	}
 
 	// Write the guess() method below
@@ -27,10 +27,21 @@ public class HiLo {
 		System.out.println("Enter you guess ");
 		guess = sc.nextInt();
 
-		// write your code below
+		// check if guess was high, low or hit
+		if (guess < random) {
+			System.out.println("Low");
+		} else if (guess == random) {
+			System.out.println("Hit");
+		} else {
+			System.out.println("High");
+		}
 
 	}
 
 	// Write startGuessing method here
+	public void startGuessing() {
+		// it continues to call .guess() until user gets hit
+		// counts number of guesses it took to get hit
+	}
 
 }
