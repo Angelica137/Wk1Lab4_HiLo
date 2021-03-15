@@ -18,7 +18,7 @@ public class HiLo {
 	}
 
 	// Write the guess() method below
-	public void guess() {
+	private void guess() {
 		// Use scanner to accept a user input
 		// Create a new scanner object to receive user input
 		Scanner sc = new Scanner(System.in);
@@ -42,6 +42,7 @@ public class HiLo {
 		// Calls .guess()
 		// it continues to call .guess() until user gets hit
 		// counts number of guesses it took to get hit
+		this.guess();
 		while (guess != random) {
 			this.guess();
 		}
