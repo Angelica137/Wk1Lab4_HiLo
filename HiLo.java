@@ -12,8 +12,10 @@ public class HiLo {
 	int guess;
 
 	public void generateNumber() {
-		// The following lines generate and output a random number between 1 and 10
-		random = (int) (Math.random() * 10) + 1;
+		// Generate a random int between 1 and 100
+
+		random = (int) (Math.random() * 100) + 1;
+		System.out.println(random);
 	}
 
 	// Write the guess() method below
