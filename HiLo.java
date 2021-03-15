@@ -39,8 +39,13 @@ public class HiLo {
 
 	// Write startGuessing method here
 	public void startGuessing() {
+		// Calls .guess()
 		// it continues to call .guess() until user gets hit
 		// counts number of guesses it took to get hit
+		while (guess != random) {
+			this.guess();
+		}
+
 	}
 
 }
